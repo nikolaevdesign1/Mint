@@ -1121,7 +1121,7 @@ input[type="checkbox"] {
     position: relative;
     display: inline-block;
     width: 52px;
-    height: 20px;
+    height: 24px;
   }
   
   /* Скрытый checkbox */
@@ -1149,8 +1149,8 @@ input[type="checkbox"] {
   .slider::before {
     content: "";
     position: absolute;
-    height: 14px;
-    width: 24px;
+    height: 18px;
+    width: 26px;
     left: 4px;
     bottom: 3px;
     background-color: white;
@@ -1164,7 +1164,7 @@ input[type="checkbox"] {
     background-color: #34c759; /* фирменный зелёный Apple */
   }
   .switch input:checked + .slider::before {
-    transform: translateX(21px);
+    transform: translateX(18пшpx);
     box-shadow: 0 2px 8px rgba(52,199,89,0.4);
   }
   .main-list-button-item-toggle{
