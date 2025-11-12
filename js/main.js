@@ -1,3 +1,28 @@
+
+
+
+$('.update-form-button-new p').on('click', function(){
+  $('.update-form-button-newfield').addClass('active');
+});
+
+
+$('.update-form-button-newfield-menu svg').on('click', function(){
+  $('.update-form-button-newfield').removeClass('active');
+});
+
+$('p.client').on('click', function(){
+  $('.client').addClass('active');
+  $('.org').addClass('active');
+});
+
+$('p.org').on('click', function(){
+  $('.org').addClass('active');
+  $('.client').removeClass('active');
+});
+
+
+
+
 //status - цвет
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -29,19 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-const toggle = document.getElementById("appleToggle");
 
-toggle.addEventListener("change", () => {
-  if (toggle.checked) {
-    console.log("🟢 ВКЛ"); // активное состояние
-  } else {
-    console.log("⚪️ ВЫКЛ"); // пассивное состояние
-  }
-});
 
 
 $('.project-table-item-line-column-icon:nth-child(1)').on('click', function(){
-  $('.update_popup').addClass('active');
+  $('.popup_notes').addClass('active');
 });
 
 
@@ -54,13 +71,36 @@ $('.project-table-item-line-column-icon:nth-child(3)').on('click', function(){
 });
 
 $('.update-popup-icon').on('click', function(){
-  $('.update_popup, .chat_popup, .popup_upload').removeClass('active');
+  $('.popup_notes, .chat_popup, .popup_upload, .create_popup').removeClass('active');
+});
+
+$('.bottom-nav-button').on('click', function(){
+  $('.create_popup').addClass('active');
+});
+
+$('.sidebar-person').on('click', function(){
+  $('.siderbar_bottom_popup, .sidebar_background, .sidebar').addClass('active');
+});
+
+
+$('.sidebar-ava').on('click', function(){
+  $('.sidebar_up_popup, .sidebar_background, .sidebar').addClass('active');
+});
+
+$('.sidebar_background').on('click', function(){
+  $('.siderbar_bottom_popup, .sidebar_background, .sidebar, .sidebar_up_popup').removeClass('active');
 });
 
 
 $('.file-info-close_button p').on('click', function(){
   $('.popup_upload').removeClass('active');
 });
+
+
+
+
+
+
 
 
 
@@ -108,3 +148,76 @@ removeFile.addEventListener('click', () => {
   fileInfo.classList.add('hidden');
   fileInput.value = '';
 });
+
+
+
+const toggle = document.getElementById("appleToggle");
+
+toggle.addEventListener("change", () => {
+  if (toggle.checked) {
+    console.log("🟢 ВКЛ"); // активное состояние
+  } else {
+    console.log("⚪️ ВЫКЛ"); // пассивное состояние
+  }
+});
+
+
+new AirDatepicker('#date1', {
+  inline: true
+})
+
+new AirDatepicker('#date2', {
+  inline: true
+})
+
+new AirDatepicker('#date3', {
+  inline: true
+})
+
+new AirDatepicker('#date4', {
+  inline: true
+})
+
+new AirDatepicker('#date5', {
+  inline: true
+})
+
+new AirDatepicker('#date6', {
+  inline: true
+})
+
+new AirDatepicker('#date7', {
+  inline: true
+})
+
+new AirDatepicker('#date8', {
+  inline: true
+})
+
+new AirDatepicker('#date9', {
+  inline: true
+})
+new AirDatepicker('#date10', {
+  inline: true
+})
+
+new AirDatepicker('#date11', {
+  inline: true
+})
+new AirDatepicker('#date12', {
+  inline: true
+})
+
+new AirDatepicker('#date13', {
+  inline: true
+})
+new AirDatepicker('#date14', {
+  inline: true
+})
+
+new AirDatepicker('#date15', {
+  inline: true
+})
+new AirDatepicker('#date16', {
+  inline: true
+})
